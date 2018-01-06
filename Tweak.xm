@@ -11,3 +11,13 @@
 	return result;
 }
 %end
+
+%hook SBDashBoardClippingLine
+-(CGFloat)lineAlpha {
+	return 0.0;
+}
+
+-(void)setLineAlpha:(CGFloat)arg1 {
+	%orig(0.0);
+}
+%end
